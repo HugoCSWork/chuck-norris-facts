@@ -1,7 +1,7 @@
 import 'package:arch_technical_test/application/chuck_norris_facts/chuck_norris_facts_bloc.dart';
-import 'file:///C:/Users/HugoTomas/Desktop/arch_technical_test/lib/pages2/util/widgets/loading_icon_with_text.dart';
-import 'package:arch_technical_test/pages2/chuck_norris_facts/chuck_norris_facts_orientation_builder.dart';
-import 'package:arch_technical_test/pages2/util/widgets/error_icon_with_text.dart';
+import 'package:arch_technical_test/pages/chuck_norris_facts/chuck_norris_facts_orientation_builder.dart';
+import 'package:arch_technical_test/pages/util/widgets/error_icon_with_text.dart';
+import 'package:arch_technical_test/pages/util/widgets/loading_icon_with_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

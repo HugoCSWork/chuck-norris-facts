@@ -1,6 +1,6 @@
 import 'package:arch_technical_test/application/chuck_norris_facts/chuck_norris_facts_bloc.dart';
 import 'package:arch_technical_test/infrastructure/chuck_norris_facts/chuck_norris_facts_repository.dart';
-import 'package:arch_technical_test/pages2/chuck_norris_facts/chuck_norris_facts_builder.dart';
+import 'package:arch_technical_test/pages/chuck_norris_facts/chuck_norris_facts_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';

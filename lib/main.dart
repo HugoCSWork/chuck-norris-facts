@@ -1,5 +1,4 @@
-import 'package:arch_technical_test/pages/home/home_list_builder.dart';
-import 'package:arch_technical_test/pages2/home/home_scaffold.dart';
+import 'package:arch_technical_test/pages/home/home_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

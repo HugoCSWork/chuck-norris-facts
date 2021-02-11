@@ -1,5 +1,5 @@
 import 'package:arch_technical_test/domain/models/prime_button.dart';
-import 'package:arch_technical_test/pages2/util/widgets/opacity.dart';
+import 'package:arch_technical_test/pages/util/widgets/opacity.dart';
 import 'package:flutter/material.dart';
 
 Widget primaryColorButtonOpacity({

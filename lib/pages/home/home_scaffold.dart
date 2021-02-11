@@ -1,6 +1,8 @@
-import 'package:arch_technical_test/pages2/home/home_list_builder.dart';
+import 'package:arch_technical_test/pages/home/home_list_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'home_list_builder.dart';
 
 class HomeScaffold extends StatelessWidget {
   @override

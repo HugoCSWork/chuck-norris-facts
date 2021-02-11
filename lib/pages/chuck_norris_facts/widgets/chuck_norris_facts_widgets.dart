@@ -1,4 +1,4 @@
-import 'file:///C:/Users/HugoTomas/Desktop/arch_technical_test/lib/pages2/util/widgets/bordered_card.dart';
+import 'package:arch_technical_test/pages/util/widgets/bordered_card.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';

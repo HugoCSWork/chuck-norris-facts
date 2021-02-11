@@ -1,6 +1,6 @@
 
 import 'package:arch_technical_test/domain/models/chuck_norris_fact.dart';
-import 'package:arch_technical_test/pages2/chuck_norris_facts/widgets/chuck_norris_facts_widgets.dart';
+import 'package:arch_technical_test/pages/chuck_norris_facts/widgets/chuck_norris_facts_widgets.dart';
 import 'package:flutter/material.dart';
 
 Widget chuckNorrisFacts({
