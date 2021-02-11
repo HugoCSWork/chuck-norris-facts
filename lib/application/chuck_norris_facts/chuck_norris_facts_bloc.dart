@@ -24,7 +24,7 @@ class ChuckNorrisFactsBloc
     if (event is RetrieveChuckNorrisFactsEvent) {
       yield ChuckNorrisFactsLoadingState();
       try {
-        ChuckNorrisFact fact = await chuckNorrisRepository.getChuckNorrisFacts();
+        final ChuckNorrisFact fact = await chuckNorrisRepository.getChuckNorrisFacts();
         yield ChuckNorrisFactsSuccessfulState(chuckNorrisFacts: fact);
       } catch (err) {
         yield ChuckNorrisFactsErrorState(error: err.toString());

@@ -8,14 +8,15 @@ import 'package:flutter/services.dart';
 class ChuckNorrisFactsRepository implements ChuckNorrisRepositoryImplementation {
   @override
   Future<ChuckNorrisFact> getChuckNorrisFacts() async {
-    var data = await rootBundle.loadString('assets/json/facts.json');
-    var mappedData = await json.decode(data);
-    List<ChuckNorrisFact> facts = [];
-    mappedData.forEach((element) {
-      ChuckNorrisFact fact = ChuckNorrisFact.fromJson(element);
+    final data = await rootBundle.loadString('assets/json/facts.json');
+    final mappedData = (json.decode(data) as List)
+        .map((e) => e as Map<String, dynamic>)?.toList();
+
+    final List<ChuckNorrisFact> facts = [];
+    for (final item in mappedData) {
+      final ChuckNorrisFact fact = ChuckNorrisFact.fromJson(item);
       facts.add(fact);
-    });
+    }
     return facts[Random().nextInt(facts.length)];
   }
-
 }

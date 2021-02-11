@@ -39,10 +39,9 @@ Widget primeButtonColor({
 
 Widget primeButtonText({ @required String text }) {
   return Align(
-      alignment: Alignment.center,
       child: Text(
         text,
-        style: TextStyle(
+        style: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 25
         ),

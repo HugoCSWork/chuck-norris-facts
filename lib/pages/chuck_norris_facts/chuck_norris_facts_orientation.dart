@@ -2,10 +2,10 @@ import 'package:arch_technical_test/domain/models/chuck_norris_fact.dart';
 import 'package:arch_technical_test/pages/chuck_norris_facts/chuck_norris_facts.dart';
 import 'package:flutter/material.dart';
 
-class ChuckNorrisFactsOrientationBuilder extends StatelessWidget {
+class ChuckNorrisFactsOrientation extends StatelessWidget {
   final ChuckNorrisFact chuckNorrisFact;
 
-  const ChuckNorrisFactsOrientationBuilder({ Key key, this.chuckNorrisFact })
+  const ChuckNorrisFactsOrientation({ Key key, this.chuckNorrisFact })
       : super(key: key);
 
 

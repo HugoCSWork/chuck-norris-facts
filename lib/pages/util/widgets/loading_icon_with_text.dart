@@ -9,7 +9,7 @@ Widget loadingIconWithText({
   return Column(
     mainAxisAlignment: mainAxisAlignment,
     children: [
-      Center(
+      const Center(
           child: CircularProgressIndicator()
       ),
       Padding(

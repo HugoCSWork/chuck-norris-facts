@@ -1,3 +1,5 @@
+
+
 class ChuckNorrisFact {
   final List categories;
   final String createdAt;
@@ -11,12 +13,12 @@ class ChuckNorrisFact {
       this.url, this.value, this.categories);
 
   ChuckNorrisFact.fromJson(Map<String, dynamic> json)
-      : categories = json['categories'],
+      : categories = json['categories'] as List,
         createdAt = json['created_at'].toString().substring(0,10),
-        iconUrl = json['icon_url'],
-        id = json['id'],
+        iconUrl = json['icon_url'] as String,
+        id = json['id'] as String,
         updatedAt = json['updated_at'].toString().substring(0,19),
         url = json['url'].toString().substring(0,26),
-        value = json['value'];
+        value = json['value'] as String;
 
 }

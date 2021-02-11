@@ -10,7 +10,7 @@ Widget errorIconWithText({
   return Column(
     mainAxisAlignment: mainAxisAlignment,
     children: [
-      Center(
+      const Center(
           child: Icon(Icons.error)
       ),
       Padding(

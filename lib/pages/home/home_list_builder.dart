@@ -22,7 +22,7 @@ class _HomeListBuilderState extends State<HomeListBuilder> {
   @override
   void initState() {
     super.initState();
-    data = List<PrimeButton>();
+    data = <PrimeButton>[];
     for (int i = 1; i < 101; i++) {
       data.add(PrimeButton(
         num: i,
@@ -32,14 +32,14 @@ class _HomeListBuilderState extends State<HomeListBuilder> {
     }
   }
 
-  void buttonClickNavigation({@required num}) {
+  void buttonClickNavigation({@required int num}) {
     Navigator.of(context).push( MaterialPageRoute(builder: (context) =>
         ChuckNorrisFactsScaffold()))
         .then((value) => {
           Scaffold.of(context).showSnackBar(
               SnackBar(
                 content: Text("Number: $num is now disabled"),
-                duration: Duration(seconds: 1),
+                duration: const Duration(seconds: 1),
               )),
         });
   }
@@ -52,7 +52,7 @@ class _HomeListBuilderState extends State<HomeListBuilder> {
           child: ListView.builder(
             itemCount: data.length,
             itemBuilder: (context, index) {
-              PrimeButton button = data[index];
+              final PrimeButton button = data[index];
               return HomeItem(
                 primaryColor: button.num.isEven ? Colors.red : Colors.green,
                 primeButton: button,
@@ -68,7 +68,7 @@ class _HomeListBuilderState extends State<HomeListBuilder> {
             },
           ),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
       ],
     );
   }
