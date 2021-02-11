@@ -81,7 +81,7 @@ Widget findOutMore({
 }) {
   if(orientation == Orientation.portrait) {
     return Padding(
-      padding: const EdgeInsets.only(top: 8),
+      padding: const EdgeInsets.only(top: 4),
       child: FlatButton(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18.0),
