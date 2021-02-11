@@ -12,7 +12,7 @@ Align chuckNorrisFactsImage() {
         height: 150,
         child: Image(
           image: AssetImage(
-              'assets/images/chuck_norris_3.png'
+              'assets/images/chuck_norris.png'
           ),
         ),
       )

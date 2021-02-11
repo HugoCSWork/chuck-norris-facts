@@ -11,7 +11,7 @@ part 'chuck_norris_facts_state.dart';
 part 'chuck_norris_facts_bloc.freezed.dart';
 
 /// Using Bloc State Management to retrieve and store a random chuck norris fact
-/// Used with Freezed to generate useful code like 'event.map'
+/// Used with Freezed libraries to generate useful code such as - 'event.map'
 class ChuckNorrisFactsBloc
     extends Bloc<ChuckNorrisFactsEvent, ChuckNorrisFactsState> {
 

@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Arch tech Test',
+      title: 'Arch Tech Test',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         //actorTextTheme
