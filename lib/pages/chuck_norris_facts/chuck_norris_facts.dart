@@ -9,8 +9,8 @@ Widget chuckNorrisFacts({
   @required ChuckNorrisFact chuckNorrisFact,
   @required Orientation orientation
 }){
-  final double cardPosition = orientation == Orientation.portrait ? 128 : 110;
-  final double imagePosition = orientation == Orientation.portrait ? 16 : 10;
+  final double cardPosition = orientation == Orientation.portrait ? 116 : 110;
+  final double imagePosition = orientation == Orientation.portrait ? 4 : 10;
 
   return SizedBox(
     width: MediaQuery.of(context).size.width,
