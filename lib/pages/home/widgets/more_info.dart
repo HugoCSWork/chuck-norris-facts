@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/// Icon in NavBar to display a AlertDialog used to explain how to use this
+/// program.
 IconButton moreInfoDialog({ @required BuildContext context }) {
   return IconButton(
       icon: const Icon(Icons.info_outline),

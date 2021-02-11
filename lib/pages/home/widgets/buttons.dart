@@ -12,6 +12,9 @@ Widget primaryColorButtonOpacity({
     ) : Container();
 }
 
+/// Is used to configure the opacity for the prime color button
+/// Due to how opacity works depending on the primary color the blue will
+/// have to be configured differently
 Widget primeButtonColor({
   @required PrimeButton primeButton,
   @required BuildContext context

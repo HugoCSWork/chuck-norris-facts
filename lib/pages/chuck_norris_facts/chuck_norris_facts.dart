@@ -3,6 +3,7 @@ import 'package:arch_technical_test/domain/models/chuck_norris_fact.dart';
 import 'package:arch_technical_test/pages/chuck_norris_facts/widgets/chuck_norris_facts_widgets.dart';
 import 'package:flutter/material.dart';
 
+/// Layout for the chuck norris fact
 Widget chuckNorrisFacts({
   @required BuildContext context,
   @required ChuckNorrisFact chuckNorrisFact,

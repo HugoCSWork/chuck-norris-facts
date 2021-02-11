@@ -4,6 +4,7 @@ import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+/// Align widget to ensure the image is displayed underneath the card
 Align chuckNorrisFactsImage() {
   return const Align(
       alignment: Alignment.topCenter,
@@ -50,6 +51,8 @@ Padding chuckNorrisFactsText({ @required String text }) {
   );
 }
 
+/// Using CircularProviderAvatar and CachedNetworkImage to retrieve the internet
+/// image specified in the JSON.
 CircularProfileAvatar chuckNorrisFactsCircularImage({
   @required String iconUrl,
 }) {
@@ -71,6 +74,8 @@ CircularProfileAvatar chuckNorrisFactsCircularImage({
   );
 }
 
+/// Depending on the orientation it will display either a button or a text
+/// widget.
 Widget findOutMore({
   @required Orientation orientation, @required String url
 }) {

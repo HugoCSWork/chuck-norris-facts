@@ -2,6 +2,8 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'chuck_norris_fact.g.dart';
 
+/// Chuck Norris model to map from JSON file.
+/// Uses JsonSerializable to automate json configuration
 @JsonSerializable(
   anyMap: true,
   explicitToJson: true,

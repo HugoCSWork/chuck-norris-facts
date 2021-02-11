@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/// Creates a scaffold and initialises the bloc provider to retrieve a random
+/// Chuck Norris fact
 class ChuckNorrisFactsScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -5,6 +5,8 @@ import 'package:arch_technical_test/domain/models/chuck_norris_fact.dart';
 import 'package:flutter/services.dart';
 
 class ChuckNorrisFactsRepository {
+
+  /// Retrieves a random fact from the JSON file facts in the assets folder
   Future<ChuckNorrisFact> getChuckNorrisFacts() async {
     final data = await rootBundle.loadString('assets/json/facts.json');
     final mappedData = (json.decode(data) as List)

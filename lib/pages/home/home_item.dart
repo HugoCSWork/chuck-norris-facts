@@ -2,6 +2,7 @@ import 'package:arch_technical_test/domain/models/prime_button.dart';
 import 'package:arch_technical_test/pages/home/widgets/buttons.dart';
 import 'package:flutter/material.dart';
 
+/// Design for the individual button for the home layout
 class HomeItem extends StatelessWidget {
 
   final PrimeButton primeButton;

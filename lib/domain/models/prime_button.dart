@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+/// Model for creating home buttons
 class PrimeButton {
   final int num;
   bool isPrime;

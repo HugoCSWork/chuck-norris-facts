@@ -5,6 +5,8 @@ import 'package:arch_technical_test/pages/util/widgets/loading_icon_with_text.da
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+/// Checks the bloc state for the request made in the scaffold and a certain
+/// response is made depending on the state
 class ChuckNorrisFactsBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

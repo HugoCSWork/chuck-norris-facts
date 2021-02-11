@@ -3,6 +3,7 @@ import 'package:arch_technical_test/pages/chuck_norris_facts/chuck_norris_facts_
 import 'package:arch_technical_test/pages/home/home_item.dart';
 import 'package:flutter/material.dart';
 
+/// Used to develop the ListView.Builder to create all 100 buttons for the view
 class HomeListBuilder extends StatefulWidget {
   @override
   _HomeListBuilderState createState() => _HomeListBuilderState();
@@ -19,6 +20,7 @@ class _HomeListBuilderState extends State<HomeListBuilder> {
     return num > 1;
   }
 
+  /// On initialisation will generate all 100 numbers for the ListView
   @override
   void initState() {
     super.initState();
@@ -32,6 +34,8 @@ class _HomeListBuilderState extends State<HomeListBuilder> {
     }
   }
 
+  /// When prime number is clicked will navigate to chuck norris facts page
+  /// on return will display a SnackBar showing which number is disabled.
   void buttonClickNavigation({@required int num}) {
     Navigator.of(context).push( MaterialPageRoute(builder: (context) =>
         ChuckNorrisFactsScaffold()))
