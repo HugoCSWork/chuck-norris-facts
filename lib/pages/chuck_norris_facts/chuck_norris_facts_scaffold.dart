@@ -11,7 +11,8 @@ class ChuckNorrisFactsScaffold extends StatelessWidget {
     return BlocProvider(
       create: (context) => ChuckNorrisFactsBloc(
           chuckNorrisRepository: ChuckNorrisFactsRepository())
-        ..add(RetrieveChuckNorrisFactsEvent()),
+        ..add(const ChuckNorrisFactsEvent.getRandomChuckNorrisFact())
+      ,
       child: Scaffold(
         backgroundColor: const Color(0xffCDF0FF),
         appBar: AppBar(

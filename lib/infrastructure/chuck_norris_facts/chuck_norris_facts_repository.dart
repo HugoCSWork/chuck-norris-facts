@@ -2,11 +2,9 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:arch_technical_test/domain/models/chuck_norris_fact.dart';
-import 'package:arch_technical_test/domain/repo/chuck_norris_repo_implementation.dart';
 import 'package:flutter/services.dart';
 
-class ChuckNorrisFactsRepository implements ChuckNorrisRepositoryImplementation {
-  @override
+class ChuckNorrisFactsRepository {
   Future<ChuckNorrisFact> getChuckNorrisFacts() async {
     final data = await rootBundle.loadString('assets/json/facts.json');
     final mappedData = (json.decode(data) as List)

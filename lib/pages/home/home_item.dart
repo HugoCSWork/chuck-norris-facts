@@ -1,6 +1,5 @@
 import 'package:arch_technical_test/domain/models/prime_button.dart';
 import 'package:arch_technical_test/pages/home/widgets/buttons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeItem extends StatelessWidget {

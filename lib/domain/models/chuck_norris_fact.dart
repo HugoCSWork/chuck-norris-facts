@@ -1,5 +1,12 @@
+import 'package:json_annotation/json_annotation.dart';
 
+part 'chuck_norris_fact.g.dart';
 
+@JsonSerializable(
+  anyMap: true,
+  explicitToJson: true,
+  fieldRename: FieldRename.snake,
+)
 class ChuckNorrisFact {
   final List categories;
   final String createdAt;
@@ -12,13 +19,10 @@ class ChuckNorrisFact {
   ChuckNorrisFact(this.createdAt, this.iconUrl, this.id, this.updatedAt,
       this.url, this.value, this.categories);
 
-  ChuckNorrisFact.fromJson(Map<String, dynamic> json)
-      : categories = json['categories'] as List,
-        createdAt = json['created_at'].toString().substring(0,10),
-        iconUrl = json['icon_url'] as String,
-        id = json['id'] as String,
-        updatedAt = json['updated_at'].toString().substring(0,19),
-        url = json['url'].toString().substring(0,26),
-        value = json['value'] as String;
+  factory ChuckNorrisFact.fromJson(Map<String, dynamic> json) =>
+      _$ChuckNorrisFactFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ChuckNorrisFactToJson(this);
+
 
 }

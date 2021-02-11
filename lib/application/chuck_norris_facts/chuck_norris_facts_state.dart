@@ -1,34 +1,10 @@
 part of 'chuck_norris_facts_bloc.dart';
 
-@immutable
-abstract class ChuckNorrisFactsState extends Equatable {}
-
-class ChuckNorrisFactsInitialState extends ChuckNorrisFactsState {
-  @override
-  List<Object> get props => [];
+@freezed
+abstract class ChuckNorrisFactsState with  _$ChuckNorrisFactsState {
+  const factory ChuckNorrisFactsState.initial() = _Initial;
+  const factory ChuckNorrisFactsState.loadInProgress() = _LoadInProgress;
+  const factory ChuckNorrisFactsState.loadSuccess(ChuckNorrisFact chuckNorrisFact) = _LoadSuccess;
+  const factory ChuckNorrisFactsState.loadFailure(String err) = _LoadFailure;
 }
 
-class ChuckNorrisFactsLoadingState extends ChuckNorrisFactsState {
-  @override
-  List<Object> get props => [];
-}
-
-class ChuckNorrisFactsSuccessfulState extends ChuckNorrisFactsState {
-  final ChuckNorrisFact chuckNorrisFacts;
-
-  ChuckNorrisFactsSuccessfulState({@required this.chuckNorrisFacts});
-
-  @override
-  List<Object> get props => [chuckNorrisFacts];
-}
-
-
-class ChuckNorrisFactsErrorState extends ChuckNorrisFactsState {
-
-  final String error;
-
-  ChuckNorrisFactsErrorState({ @required this.error });
-
-  @override
-  List<Object> get props => [error];
-}

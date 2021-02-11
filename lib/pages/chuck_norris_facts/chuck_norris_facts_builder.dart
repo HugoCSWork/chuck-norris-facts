@@ -10,24 +10,19 @@ class ChuckNorrisFactsBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ChuckNorrisFactsBloc, ChuckNorrisFactsState>(
       builder: (context, state) {
-        if (state is ChuckNorrisFactsInitialState) {
-          return Container();
-        } else if (state is ChuckNorrisFactsLoadingState) {
-          return loadingIconWithText(
-              padding: const EdgeInsets.only(top: 8.0)
-          );
-        } else if (state is ChuckNorrisFactsErrorState) {
-          return errorIconWithText(
-              message: "Error loading data, Error: ${state.error}",
+        return state.map(
+            initial: (_) => Container(),
+            loadInProgress: (_) => loadingIconWithText(
+                padding: const EdgeInsets.only(top: 8.0)
+            ),
+            loadSuccess: (state) => ChuckNorrisFactsOrientation(
+              chuckNorrisFact: state.chuckNorrisFact
+            ),
+            loadFailure: (state) => errorIconWithText(
+              message: "Error loading data, Error: ${state.err}",
               padding: const EdgeInsets.fromLTRB(16, 8.0, 16, 0)
-          );
-        } else if (state is ChuckNorrisFactsSuccessfulState) {
-          return ChuckNorrisFactsOrientation(
-              chuckNorrisFact: state.chuckNorrisFacts
-          );
-        } else {
-          return Container();
-        }
+            )
+        );
       },
     );
   }

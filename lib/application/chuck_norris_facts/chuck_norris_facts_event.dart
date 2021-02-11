@@ -1,9 +1,7 @@
 part of 'chuck_norris_facts_bloc.dart';
 
-@immutable
-abstract class ChuckNorrisFactsEvent extends Equatable {}
 
-class RetrieveChuckNorrisFactsEvent extends ChuckNorrisFactsEvent {
-  @override
-  List<Object> get props => null;
+@freezed
+abstract class ChuckNorrisFactsEvent with _$ChuckNorrisFactsEvent {
+  const factory ChuckNorrisFactsEvent.getRandomChuckNorrisFact() = _getRandomChuckNorrisFact;
 }

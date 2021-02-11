@@ -24,11 +24,12 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^6.1.2
-  equatable: ^1.2.6
   google_fonts: ^1.1.2
   circular_profile_avatar: ^1.0.6
   cached_network_image: ^2.3.3
   url_launcher: ^5.7.10
+  json_annotation: ^3.1.1
+  freezed_annotation: ^0.12.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -39,6 +40,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   lint: ^1.0.0
+  build_runner: 1.11.0
+  json_serializable: ^3.5.1
+  freezed: ^0.12.7
 
 
 # For information on the generic Dart part of this file, see the
