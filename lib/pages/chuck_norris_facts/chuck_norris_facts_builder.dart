@@ -1,5 +1,5 @@
 import 'package:arch_technical_test/application/chuck_norris_facts/chuck_norris_facts_bloc.dart';
-import 'package:arch_technical_test/pages/chuck_norris_facts/chuck_norris_facts_orientation_builder.dart';
+import 'package:arch_technical_test/pages/chuck_norris_facts/chuck_norris_facts_orientation.dart';
 import 'package:arch_technical_test/pages/util/widgets/error_icon_with_text.dart';
 import 'package:arch_technical_test/pages/util/widgets/loading_icon_with_text.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ class ChuckNorrisFactsBuilder extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(16, 8.0, 16, 0)
           );
         } else if (state is ChuckNorrisFactsSuccessfulState) {
-          return ChuckNorrisFactsOrientationBuilder(
+          return ChuckNorrisFactsOrientation(
               chuckNorrisFact: state.chuckNorrisFacts
           );
         } else {

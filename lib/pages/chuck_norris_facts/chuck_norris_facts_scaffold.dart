@@ -13,7 +13,7 @@ class ChuckNorrisFactsScaffold extends StatelessWidget {
           chuckNorrisRepository: ChuckNorrisFactsRepository())
         ..add(RetrieveChuckNorrisFactsEvent()),
       child: Scaffold(
-        backgroundColor: Color(0xffCDF0FF),
+        backgroundColor: const Color(0xffCDF0FF),
         appBar: AppBar(
           title: Text(
             "CHUCK NORRIS FACTS",

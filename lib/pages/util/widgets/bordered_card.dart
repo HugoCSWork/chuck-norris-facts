@@ -12,7 +12,7 @@ Widget borderedCard({
 }) {
   return Container(
     height: height,
-    decoration: new BoxDecoration(
+    decoration: BoxDecoration(
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(containerBorder),
         topRight: Radius.circular(containerBorder),

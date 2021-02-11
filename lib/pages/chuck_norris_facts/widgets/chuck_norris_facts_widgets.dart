@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Align chuckNorrisFactsImage() {
-  return Align(
+  return const Align(
       alignment: Alignment.topCenter,
-      child: Container(
+      child: SizedBox(
         height: 150,
         child: Image(
           image: AssetImage(
@@ -43,7 +43,7 @@ Padding chuckNorrisFactsText({ @required String text }) {
     child: Text(
       text,
       textAlign: TextAlign.center,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 22,
       ),
     ),
@@ -71,23 +71,25 @@ CircularProfileAvatar chuckNorrisFactsCircularImage({
   );
 }
 
-Widget findOutMore({ @required orientation, @required String url }) {
+Widget findOutMore({
+  @required Orientation orientation, @required String url
+}) {
   if(orientation == Orientation.portrait) {
     return Padding(
-      padding: EdgeInsets.only(top: 8),
+      padding: const EdgeInsets.only(top: 8),
       child: FlatButton(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18.0),
-            side: BorderSide(color: Colors.blue)
+            side: const BorderSide(color: Colors.blue)
         ),
         onPressed: () => launch(url),
-        child: Text("Find more facts here")
+        child: const Text("Find more facts here")
       ),
     );
   } else {
     return InkWell(
       onTap: () => launch(url),
-      child: Text("Find more facts here")
+      child: const Text("Find more facts here")
     );
   }
 }
