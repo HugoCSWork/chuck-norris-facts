@@ -8,7 +8,7 @@ workflows:
     environment:
       vars:
         ENV: PROD
-      flutter: stable
+      flutter: beta
       xcode: latest
       cocoapods: default
     cache:
@@ -63,7 +63,7 @@ workflows:
     environment:
       vars:
         ENV: STAGE
-      flutter: stable
+      flutter: beta
       xcode: latest
       cocoapods: default
     cache:
